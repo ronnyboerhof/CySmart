@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/no_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/profile_control_no_device_message"
+            android:textColor="@color/main_bg_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ListView
+            android:id="@+id/listView_profiles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="3dp"
+            android:padding="5dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>  

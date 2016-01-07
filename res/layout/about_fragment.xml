@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/abt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/about_image"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@color/actionbar_bg_color"
+        android:contentDescription="@string/image_actionbar_bg_color" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/logo_about"
+        android:contentDescription="@string/image_about_cypress_logo" />
+
+    <TextView
+        android:id="@+id/cysmart_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/cysmart_version"
+        android:textColor="@color/actionbar_bg_color"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cysmart_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cysmart_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/cysmart_copyright"
+        android:textColor="@color/actionbar_bg_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cypress_semiconductors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cysmart_copyright"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cypress_semiconductors"
+        android:textColor="@color/actionbar_bg_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

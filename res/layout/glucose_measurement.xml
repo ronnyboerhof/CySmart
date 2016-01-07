@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/glucose_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/glucose_icon"
+                android:paddingTop="30dp"
+                android:src="@drawable/glucose_icon" />
+
+            <LinearLayout
+                android:id="@+id/lin0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/glucose_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/glucose_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/recording_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/glucose_time"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small" />
+
+                <TextView
+                    android:id="@+id/recording_time_data"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:padding="10dp"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/glucose_type"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small" />
+
+                <TextView
+                    android:id="@+id/glucose_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:padding="10dp"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/sample_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|end"
+                    android:text="@string/glucose_sample_location"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small" />
+
+                <TextView
+                    android:id="@+id/glucose_sample_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:padding="10dp"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

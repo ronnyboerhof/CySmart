@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Android-WebRequest">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/Android-WebRequest.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
